@@ -1,0 +1,11 @@
+<plugin name=\"distestproject\" version=\"$$DISTESTPROJECT_VERSION\" compatVersion=\"$$DISTESTPROJECT_VERSION\">
+    <vendor>ifak</vendor>
+    <copyright>(C) ifak</copyright>
+    <license>LGPL</license>
+    <description>administration of distest-projects</description>
+    <url></url>
+    <dependencyList>
+        <dependency name=\"ProjectExplorer\" version=\"$$QTCREATOR_VERSION\"/>
+        <dependency name=\"testcaseeditor\" version=\"$$TESTCASEEDITOR_VERSION\"/>
+    </dependencyList>
+</plugin>

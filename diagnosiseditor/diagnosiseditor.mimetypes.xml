@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<mime-info xmlns='http://www.freedesktop.org/standards/shared-mime-info'>
+    <mime-type type="application/diagnosisrule">
+        <sub-class-of type="text/plain"/>
+        <comment>diagnosis main specification</comment>
+        <glob pattern="*.rule"/>
+    </mime-type>
+    <mime-type type="application/diagnosisComponent">
+        <sub-class-of type="text/plain"/>
+        <comment>diagnosis components specification</comment>
+        <glob pattern="*.components"/>
+    </mime-type>
+    <mime-type type="application/diagnosisSignal">
+        <sub-class-of type="text/plain"/>
+        <comment>diagnosis signals specification</comment>
+        <glob pattern="*.signals"/>
+    </mime-type>
+    <mime-type type="application/diagnosisgraphic">
+        <sub-class-of type="text/plain"/>
+        <comment>diagnosis specification</comment>
+        <glob pattern="*.diagnosisgraphic"/>
+    </mime-type>
+</mime-info>

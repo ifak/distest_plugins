@@ -1,0 +1,12 @@
+<RCC>
+    <qresource prefix="/distesteditor">
+        <file>testreport/Testreport.qml</file>
+        <file>testreport/StatisticTable.qml</file>
+        <file>testreport/TestCasesTable.qml</file>
+        <file>testreport/TestSuiteTable.qml</file>
+        <file>testreport/Headline.qml</file>
+        <file>distesteditor.mimetypes.xml</file>
+        <file>defaultStyleSheets.txt</file>
+        <file>images/testsystem.png</file>
+    </qresource>
+</RCC>

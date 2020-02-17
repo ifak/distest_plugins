@@ -1,0 +1,11 @@
+<plugin name=\"diagnosiseditor\" version=\"$$DIAGNOSISEDITOR_VERSION\" compatVersion=\"$$DIAGNOSISEDITOR_VERSION\">
+  <vendor>ifak</vendor>
+  <copyright>(C) ifak</copyright>
+  <license>LGPL</license>
+  <description>diagnosis editor plugin</description>
+  <url></url>
+  <dependencyList>
+    <dependency name=\"dsleditor\" version=\"$$DSLEDITOR_VERSION\"/>
+  </dependencyList>
+</plugin>
+

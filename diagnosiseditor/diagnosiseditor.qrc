@@ -1,0 +1,5 @@
+<RCC>
+    <qresource prefix="/diagnosiseditor">
+        <file>diagnosiseditor.mimetypes.xml</file>
+    </qresource>
+</RCC>

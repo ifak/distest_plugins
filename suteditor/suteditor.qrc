@@ -1,0 +1,5 @@
+<RCC>
+    <qresource prefix="/suteditor">
+        <file>suteditor.mimetypes.xml</file>
+    </qresource>
+</RCC>

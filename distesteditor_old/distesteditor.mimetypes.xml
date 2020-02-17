@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<mime-info xmlns='http://www.freedesktop.org/standards/shared-mime-info'>
+    <mime-type type="application/decl">
+        <sub-class-of type="text/plain"/>
+        <comment>types, signals, etc. declaration</comment>
+        <glob pattern="*.decl"/>
+    </mime-type>
+    <mime-type type="application/testsuite">
+        <sub-class-of type="text/plain"/>
+        <comment>specification of a test suite</comment>
+        <glob pattern="*.testsuite"/>
+    </mime-type>
+    <mime-type type="application/testsuitegraphic">
+        <sub-class-of type="text/plain"/>
+        <comment>specification of a test suite</comment>
+        <glob pattern="*.testsuitegraphic"/>
+    </mime-type>
+    <mime-type type="application/testreportgraphic">
+  <sub-class-of type="text/plain"/>
+  <comment>test report document</comment>
+  <glob pattern="*.html"/>
+    </mime-type>
+</mime-info>

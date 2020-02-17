@@ -1,0 +1,50 @@
+//import test system for your test case
+//import <$${ProjectName}.testsystem> as testsystem
+
+TestCase{
+
+  //declare name, enabled, attributes, signals ...
+  Declaration {
+    name:     $${NewTestCaseName};
+    enabled:  false;
+
+    Attribute int internAttribute = 0;
+
+    Signal request_1 (int x, int y);
+    Signal response_1 (bool res, int value);
+  }
+
+//declare test case behavior
+
+
+  this.internAttribute = 10;
+
+  Message(testsystem.monitoring.pRseApp->sut.RSE_App.pTestSystem: stimuli(10, 20);
+
+  Check(sut.RSE_App.pEvaluation->device_1): response[msg.res==true and
+                    (msg.value >=10)
+                    and msg.value<=20
+                    and (msg.value<=15
+                          or msg.value>=12) and (internAttribute < 10)],
+    timeout: 300s;//optional
+
+  Alt{
+    [this.internAttribute<10]{
+      Check(sut.sut_comp_2.ext_port->testsystem.monitoring.pRseApp): response(msg.res==true and
+                        msg.value>=10
+                        and msg.value<=20
+                        and (msg.value<=15
+                              or msg.value>=12) and internAttribute < 10);
+
+      this.testResult = "Pass";
+    }
+    []{
+      Check(sut.sut_comp_2.ext_port->testsystem.car2X.pRseApp): winmodVar[msg.value == "expected"];
+      }
+      this.testResult = "Pass";
+    }
+    [defaultTimer.timeout()]{
+      this.testResult = "Fail";
+    }
+  }
+}

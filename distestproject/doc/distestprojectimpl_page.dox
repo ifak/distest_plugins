@@ -1,0 +1,25 @@
+namespace distestproject{
+
+/*! \page distestprojectimpl_page DisTest-Projekt
+\tableofcontents
+\section distestprojectoverview_sec Überblick
+In einem Projekt werden in erster Linie Dateien verwaltet. Beim Öffnen einer Datei wird der zugehörige registrierte Editor geöffnet. Der Typ einer Datei wird an dessen Endung, dem MIME-Typ identifiziert und entsprechend im Projektbaum gruppiert. In einem DisTest-Projekt werden die MIME-Typen
+
+- __decl__ (Deklaration von globalen Typen, Variablen, Signalen etc.),
+- __sut__ (Deklaration eines verteilten Testobjekts als "System Under Test - SUT"),
+- **testsystem** (Deklaration eines verteilten Testsystems) und
+- **testcase** (Deklaration eines Testfalls)
+
+unterstützt.
+
+\section distestprojectcompile_sec Bauen/Kompilieren eines DisTest-Projekts
+Beim Bauen eines DisTest-Projekts (DisTestProject::rebuildTestModel) werden Modelle für alle Projektdateien erstellt. Dabei werden Dateien mit folgender Priorität kompiliert:
+
+1. __decl__ ,
+2. __sut__ ,
+3. **testsystem**,
+4. **testcase**
+
+Die enstehenden Modelle werden mit dem Pfad zur zugehörigen Datei gespeichert, um wiederholtes Erstellen von Modellen zu vermeiden. Eine Testsuite-Modell (model::ts::TestSuite) besteht aus einem SUT (model::ts::SUT), einem Testsystem (model::ts::TestSystem) und einer beliebigen Anzahl zugehöriger Testfälle (model::ts::TestCase). Prinzipiell können beim Erstellen eines DisTest-Projekts mehrere Testsuite-Modell entstehen, die über das DisTestProjectModel verwaltet werden.
+*/
+}// end namespace distestproject

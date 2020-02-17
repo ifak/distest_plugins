@@ -1,0 +1,1158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>DisTestTestCaseSettingsPageUi</class>
+ <widget class="QWidget" name="DisTestTestCaseSettingsPageUi">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>831</width>
+    <height>507</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QHBoxLayout" name="horizontalLayout" stretch="7,6">
+   <item>
+    <widget class="view::ts::TestCaseView" name="_testCaseRenderView"/>
+   </item>
+   <item>
+    <widget class="QScrollArea" name="_testCaseSettingsScrollArea">
+     <property name="widgetResizable">
+      <bool>true</bool>
+     </property>
+     <widget class="QWidget" name="_settingContentsWidget">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>356</width>
+        <height>784</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_2">
+       <item>
+        <widget class="QGroupBox" name="_sutCompGroup">
+         <property name="minimumSize">
+          <size>
+           <width>321</width>
+           <height>275</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>321</width>
+           <height>275</height>
+          </size>
+         </property>
+         <property name="title">
+          <string>SUT Components</string>
+         </property>
+         <widget class="QGroupBox" name="_sutCompBoxGroup">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>120</y>
+            <width>128</width>
+            <height>71</height>
+           </rect>
+          </property>
+          <property name="title">
+           <string>Box</string>
+          </property>
+          <widget class="QWidget" name="layoutWidget_10">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>20</y>
+             <width>134</width>
+             <height>55</height>
+            </rect>
+           </property>
+           <layout class="QVBoxLayout" name="_sutCompBoxVerticalLayout">
+            <item>
+             <layout class="QHBoxLayout" name="_sutCompBoxHorizontalLayout">
+              <item>
+               <widget class="QSpinBox" name="_sutCompBoxWSpinBox">
+                <property name="minimum">
+                 <number>16</number>
+                </property>
+                <property name="maximum">
+                 <number>256</number>
+                </property>
+                <property name="value">
+                 <number>100</number>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QLabel" name="_sutCompBoxSizeLabel">
+                <property name="text">
+                 <string>x</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QSpinBox" name="_sutCompBoxHSpinBox">
+                <property name="minimum">
+                 <number>16</number>
+                </property>
+                <property name="maximum">
+                 <number>256</number>
+                </property>
+                <property name="value">
+                 <number>50</number>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+            <item>
+             <widget class="ClickableLabel" name="_sutCompBoxSelectedColor">
+              <property name="minimumSize">
+               <size>
+                <width>106</width>
+                <height>0</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>106</width>
+                <height>16777215</height>
+               </size>
+              </property>
+              <property name="frameShape">
+               <enum>QFrame::Box</enum>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </widget>
+         <widget class="QGroupBox" name="_sutCompBorderGroup">
+          <property name="geometry">
+           <rect>
+            <x>173</x>
+            <y>120</y>
+            <width>128</width>
+            <height>71</height>
+           </rect>
+          </property>
+          <property name="title">
+           <string>Border</string>
+          </property>
+          <widget class="QWidget" name="layoutWidget_11">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>20</y>
+             <width>108</width>
+             <height>55</height>
+            </rect>
+           </property>
+           <layout class="QVBoxLayout" name="_sutCompBorderVerticalLayout">
+            <item>
+             <layout class="QHBoxLayout" name="_sutCompBorderHorizontalLayout">
+              <item>
+               <widget class="QSpinBox" name="_sutCompBorderWidthSpinBox">
+                <property name="minimumSize">
+                 <size>
+                  <width>40</width>
+                  <height>0</height>
+                 </size>
+                </property>
+                <property name="minimum">
+                 <number>1</number>
+                </property>
+                <property name="maximum">
+                 <number>10</number>
+                </property>
+                <property name="value">
+                 <number>3</number>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <spacer name="_sutCompBorderWidthHorizontalSpacer">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>40</width>
+                  <height>20</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+             </layout>
+            </item>
+            <item>
+             <widget class="ClickableLabel" name="_sutCompBorderSelectedColor">
+              <property name="minimumSize">
+               <size>
+                <width>106</width>
+                <height>0</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>106</width>
+                <height>16777215</height>
+               </size>
+              </property>
+              <property name="frameShape">
+               <enum>QFrame::Box</enum>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </widget>
+         <widget class="QGroupBox" name="_sutCompTextFontGroup">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>20</y>
+            <width>301</width>
+            <height>91</height>
+           </rect>
+          </property>
+          <property name="title">
+           <string>Text</string>
+          </property>
+          <widget class="QWidget" name="layoutWidget_12">
+           <property name="geometry">
+            <rect>
+             <x>11</x>
+             <y>23</y>
+             <width>296</width>
+             <height>67</height>
+            </rect>
+           </property>
+           <layout class="QVBoxLayout" name="_sutCompTextFontVerticalLayout">
+            <item>
+             <layout class="QHBoxLayout" name="_sutCompTextFontNameAndSizeHorizontalLayout">
+              <item>
+               <widget class="QFontComboBox" name="_sutCompTextFontComboBox">
+                <property name="sizePolicy">
+                 <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                 </sizepolicy>
+                </property>
+                <property name="editable">
+                 <bool>false</bool>
+                </property>
+                <property name="currentFont">
+                 <font>
+                  <family>DejaVu Sans</family>
+                 </font>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <layout class="QHBoxLayout" name="_sutCompTexFontSizeHorizontalLayout">
+                <item>
+                 <widget class="QSpinBox" name="_sutCompTextFontSizeSpinBox">
+                  <property name="sizePolicy">
+                   <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+                    <horstretch>0</horstretch>
+                    <verstretch>0</verstretch>
+                   </sizepolicy>
+                  </property>
+                  <property name="minimumSize">
+                   <size>
+                    <width>40</width>
+                    <height>0</height>
+                   </size>
+                  </property>
+                  <property name="minimum">
+                   <number>6</number>
+                  </property>
+                  <property name="maximum">
+                   <number>72</number>
+                  </property>
+                  <property name="value">
+                   <number>8</number>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QLabel" name="_sutCompTextFontSizeUnitLabel">
+                  <property name="text">
+                   <string>px</string>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+             </layout>
+            </item>
+            <item>
+             <layout class="QHBoxLayout" name="_sutCompTextFontCharsHorizontalLayout">
+              <item>
+               <widget class="QCheckBox" name="_sutCompTextFontBoldCheckBox">
+                <property name="text">
+                 <string>Bold</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QCheckBox" name="_sutCompTextFontItalicCheckBox">
+                <property name="text">
+                 <string>Italic</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="ClickableLabel" name="_sutCompTextSelectedColor">
+                <property name="minimumSize">
+                 <size>
+                  <width>50</width>
+                  <height>0</height>
+                 </size>
+                </property>
+                <property name="frameShape">
+                 <enum>QFrame::Box</enum>
+                </property>
+                <property name="text">
+                 <string/>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+           </layout>
+          </widget>
+         </widget>
+         <widget class="QGroupBox" name="_sutCompLifeLineGroup">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>200</y>
+            <width>301</width>
+            <height>55</height>
+           </rect>
+          </property>
+          <property name="title">
+           <string>Life Line</string>
+          </property>
+          <layout class="QHBoxLayout" name="horizontalLayout_5" stretch="0,0,0">
+           <property name="spacing">
+            <number>24</number>
+           </property>
+           <item>
+            <layout class="QHBoxLayout" name="_sutCompLifeLineWidthHorizontalLayout">
+             <item>
+              <widget class="QLabel" name="_sutCompLifeLineWidthLabel">
+               <property name="text">
+                <string>Width : </string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QSpinBox" name="_sutCompLifeLineWidthSpinBox">
+               <property name="minimumSize">
+                <size>
+                 <width>40</width>
+                 <height>0</height>
+                </size>
+               </property>
+               <property name="minimum">
+                <number>1</number>
+               </property>
+               <property name="maximum">
+                <number>10</number>
+               </property>
+               <property name="value">
+                <number>3</number>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="_sutCompLifeLineColorHorizontalLayout">
+             <item>
+              <widget class="QLabel" name="_sutCompLifeLineColorLabel">
+               <property name="text">
+                <string>Color : </string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="ClickableLabel" name="_sutCompLifeLineSelectedColor">
+               <property name="minimumSize">
+                <size>
+                 <width>50</width>
+                 <height>0</height>
+                </size>
+               </property>
+               <property name="frameShape">
+                <enum>QFrame::Box</enum>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <spacer name="_sutCompLifeLineHorizontalSpacer">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>40</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+          </layout>
+         </widget>
+        </widget>
+       </item>
+       <item>
+        <widget class="QGroupBox" name="_testCompGroup">
+         <property name="minimumSize">
+          <size>
+           <width>321</width>
+           <height>275</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>321</width>
+           <height>275</height>
+          </size>
+         </property>
+         <property name="title">
+          <string>Test Components</string>
+         </property>
+         <widget class="QGroupBox" name="_testCompBoxGroup">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>120</y>
+            <width>128</width>
+            <height>71</height>
+           </rect>
+          </property>
+          <property name="title">
+           <string>Box</string>
+          </property>
+          <widget class="QWidget" name="layoutWidget_7">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>20</y>
+             <width>134</width>
+             <height>55</height>
+            </rect>
+           </property>
+           <layout class="QVBoxLayout" name="_testCompBoxVerticalLayout">
+            <item>
+             <layout class="QHBoxLayout" name="_testCompBoxHorizontalLayout">
+              <item>
+               <widget class="QSpinBox" name="_testCompBoxWSpinBox">
+                <property name="minimum">
+                 <number>16</number>
+                </property>
+                <property name="maximum">
+                 <number>256</number>
+                </property>
+                <property name="value">
+                 <number>100</number>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QLabel" name="_testCompBoxSizeLabel">
+                <property name="text">
+                 <string>x</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QSpinBox" name="_testCompBoxHSpinBox">
+                <property name="minimum">
+                 <number>16</number>
+                </property>
+                <property name="maximum">
+                 <number>256</number>
+                </property>
+                <property name="value">
+                 <number>50</number>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+            <item>
+             <widget class="ClickableLabel" name="_testCompBoxSelectedColor">
+              <property name="minimumSize">
+               <size>
+                <width>106</width>
+                <height>0</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>106</width>
+                <height>16777215</height>
+               </size>
+              </property>
+              <property name="frameShape">
+               <enum>QFrame::Box</enum>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </widget>
+         <widget class="QGroupBox" name="_testCompBorderGroup">
+          <property name="geometry">
+           <rect>
+            <x>173</x>
+            <y>120</y>
+            <width>128</width>
+            <height>71</height>
+           </rect>
+          </property>
+          <property name="title">
+           <string>Border</string>
+          </property>
+          <widget class="QWidget" name="layoutWidget_8">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>20</y>
+             <width>108</width>
+             <height>55</height>
+            </rect>
+           </property>
+           <layout class="QVBoxLayout" name="_testCompBorderVerticalLayout">
+            <item>
+             <layout class="QHBoxLayout" name="_testCompBorderHorizontalLayout">
+              <item>
+               <widget class="QSpinBox" name="_testCompBorderWidthSpinBox">
+                <property name="minimumSize">
+                 <size>
+                  <width>40</width>
+                  <height>0</height>
+                 </size>
+                </property>
+                <property name="minimum">
+                 <number>1</number>
+                </property>
+                <property name="maximum">
+                 <number>10</number>
+                </property>
+                <property name="value">
+                 <number>3</number>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <spacer name="_testCompBorderWidthHorizontalSpacer">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>40</width>
+                  <height>20</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+             </layout>
+            </item>
+            <item>
+             <widget class="ClickableLabel" name="_testCompBorderSelectedColor">
+              <property name="minimumSize">
+               <size>
+                <width>106</width>
+                <height>0</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>106</width>
+                <height>16777215</height>
+               </size>
+              </property>
+              <property name="frameShape">
+               <enum>QFrame::Box</enum>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </widget>
+         <widget class="QGroupBox" name="_testCompTextFontGroup">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>20</y>
+            <width>301</width>
+            <height>91</height>
+           </rect>
+          </property>
+          <property name="title">
+           <string>Text</string>
+          </property>
+          <widget class="QWidget" name="layoutWidget_9">
+           <property name="geometry">
+            <rect>
+             <x>11</x>
+             <y>23</y>
+             <width>296</width>
+             <height>67</height>
+            </rect>
+           </property>
+           <layout class="QVBoxLayout" name="_testCompTextFontVerticalLayout">
+            <item>
+             <layout class="QHBoxLayout" name="_testCompTextFontNameAndSizeHorizontalLayout">
+              <item>
+               <widget class="QFontComboBox" name="_testCompTextFontComboBox">
+                <property name="sizePolicy">
+                 <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                 </sizepolicy>
+                </property>
+                <property name="editable">
+                 <bool>false</bool>
+                </property>
+                <property name="currentFont">
+                 <font>
+                  <family>DejaVu Sans</family>
+                 </font>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <layout class="QHBoxLayout" name="_testCompTexFontSizeHorizontalLayout">
+                <item>
+                 <widget class="QSpinBox" name="_testCompTextFontSizeSpinBox">
+                  <property name="sizePolicy">
+                   <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+                    <horstretch>0</horstretch>
+                    <verstretch>0</verstretch>
+                   </sizepolicy>
+                  </property>
+                  <property name="minimumSize">
+                   <size>
+                    <width>40</width>
+                    <height>0</height>
+                   </size>
+                  </property>
+                  <property name="minimum">
+                   <number>6</number>
+                  </property>
+                  <property name="maximum">
+                   <number>72</number>
+                  </property>
+                  <property name="value">
+                   <number>8</number>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QLabel" name="_testCompTextFontSizeUnitLabel">
+                  <property name="text">
+                   <string>px</string>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+             </layout>
+            </item>
+            <item>
+             <layout class="QHBoxLayout" name="_testCompTextFontCharsHorizontalLayout">
+              <item>
+               <widget class="QCheckBox" name="_testCompTextFontBoldCheckBox">
+                <property name="text">
+                 <string>Bold</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QCheckBox" name="_testCompTextFontItalicCheckBox">
+                <property name="text">
+                 <string>Italic</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="ClickableLabel" name="_testCompTextSelectedColor">
+                <property name="minimumSize">
+                 <size>
+                  <width>50</width>
+                  <height>0</height>
+                 </size>
+                </property>
+                <property name="frameShape">
+                 <enum>QFrame::Box</enum>
+                </property>
+                <property name="text">
+                 <string/>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+           </layout>
+          </widget>
+         </widget>
+         <widget class="QGroupBox" name="_testCompLifeLineGroup">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>200</y>
+            <width>301</width>
+            <height>55</height>
+           </rect>
+          </property>
+          <property name="title">
+           <string>Life Line</string>
+          </property>
+          <layout class="QHBoxLayout" name="horizontalLayout_6" stretch="0,0,0">
+           <property name="spacing">
+            <number>24</number>
+           </property>
+           <item>
+            <layout class="QHBoxLayout" name="_testCompLifeLineWidthHorizontalLayout">
+             <item>
+              <widget class="QLabel" name="_testCompLifeLineWidthLabel">
+               <property name="text">
+                <string>Width : </string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QSpinBox" name="_testCompLifeLineWidthSpinBox">
+               <property name="minimumSize">
+                <size>
+                 <width>40</width>
+                 <height>0</height>
+                </size>
+               </property>
+               <property name="minimum">
+                <number>1</number>
+               </property>
+               <property name="maximum">
+                <number>10</number>
+               </property>
+               <property name="value">
+                <number>3</number>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="_testCompLifeLineColorHorizontalLayout">
+             <item>
+              <widget class="QLabel" name="_testCompLifeLineColorLabel">
+               <property name="text">
+                <string>Color : </string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="ClickableLabel" name="_testCompLifeLineSelectedColor">
+               <property name="minimumSize">
+                <size>
+                 <width>50</width>
+                 <height>0</height>
+                </size>
+               </property>
+               <property name="frameShape">
+                <enum>QFrame::Box</enum>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <spacer name="_testCompLifeLineHorizontalSpacer">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>40</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+          </layout>
+         </widget>
+        </widget>
+       </item>
+       <item>
+        <widget class="QGroupBox" name="_sequItemGroup">
+         <property name="minimumSize">
+          <size>
+           <width>321</width>
+           <height>204</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>321</width>
+           <height>204</height>
+          </size>
+         </property>
+         <property name="title">
+          <string>Sequence Items</string>
+         </property>
+         <widget class="QGroupBox" name="_sequItemTextFontGroup">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>20</y>
+            <width>301</width>
+            <height>91</height>
+           </rect>
+          </property>
+          <property name="title">
+           <string>Text</string>
+          </property>
+          <widget class="QWidget" name="layoutWidget_15">
+           <property name="geometry">
+            <rect>
+             <x>11</x>
+             <y>23</y>
+             <width>296</width>
+             <height>67</height>
+            </rect>
+           </property>
+           <layout class="QVBoxLayout" name="_sequItemTextFontVerticalLayout">
+            <item>
+             <layout class="QHBoxLayout" name="_sequItemTextFontNameAndSizeHorizontalLayout">
+              <item>
+               <widget class="QFontComboBox" name="_sequItemTextFontComboBox">
+                <property name="sizePolicy">
+                 <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                 </sizepolicy>
+                </property>
+                <property name="editable">
+                 <bool>false</bool>
+                </property>
+                <property name="currentFont">
+                 <font>
+                  <family>DejaVu Sans</family>
+                 </font>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <layout class="QHBoxLayout" name="_sequItemTexFontSizeHorizontalLayout">
+                <item>
+                 <widget class="QSpinBox" name="_sequItemTextFontSizeSpinBox">
+                  <property name="sizePolicy">
+                   <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+                    <horstretch>0</horstretch>
+                    <verstretch>0</verstretch>
+                   </sizepolicy>
+                  </property>
+                  <property name="minimumSize">
+                   <size>
+                    <width>40</width>
+                    <height>0</height>
+                   </size>
+                  </property>
+                  <property name="minimum">
+                   <number>6</number>
+                  </property>
+                  <property name="maximum">
+                   <number>72</number>
+                  </property>
+                  <property name="value">
+                   <number>8</number>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QLabel" name="_sequItemTextFontSizeUnitLabel">
+                  <property name="text">
+                   <string>px</string>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+             </layout>
+            </item>
+            <item>
+             <layout class="QHBoxLayout" name="_sequItemTextFontCharsHorizontalLayout">
+              <item>
+               <widget class="QCheckBox" name="_sequItemTextFontBoldCheckBox">
+                <property name="text">
+                 <string>Bold</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QCheckBox" name="_sequItemTextFontItalicCheckBox">
+                <property name="text">
+                 <string>Italic</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="ClickableLabel" name="_sequItemTextSelectedColor">
+                <property name="minimumSize">
+                 <size>
+                  <width>50</width>
+                  <height>0</height>
+                 </size>
+                </property>
+                <property name="frameShape">
+                 <enum>QFrame::Box</enum>
+                </property>
+                <property name="text">
+                 <string/>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+           </layout>
+          </widget>
+         </widget>
+         <widget class="QGroupBox" name="_sequItemLineGroup">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>120</y>
+            <width>301</width>
+            <height>55</height>
+           </rect>
+          </property>
+          <property name="title">
+           <string>Line</string>
+          </property>
+          <layout class="QHBoxLayout" name="horizontalLayout_4" stretch="0,0,0">
+           <property name="spacing">
+            <number>24</number>
+           </property>
+           <item>
+            <layout class="QHBoxLayout" name="_sequItemLineWidthHorizontalLayout">
+             <item>
+              <widget class="QLabel" name="_sequItemLineWidthLabel">
+               <property name="text">
+                <string>Width : </string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QSpinBox" name="_sequItemLineWidthSpinBox">
+               <property name="minimumSize">
+                <size>
+                 <width>40</width>
+                 <height>0</height>
+                </size>
+               </property>
+               <property name="minimum">
+                <number>1</number>
+               </property>
+               <property name="maximum">
+                <number>10</number>
+               </property>
+               <property name="value">
+                <number>3</number>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="_sequItemLineColorHorizontalLayout">
+             <item>
+              <widget class="QLabel" name="_sequItemLineColorLabel">
+               <property name="text">
+                <string>Color : </string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="ClickableLabel" name="_sequItemLineSelectedColor">
+               <property name="minimumSize">
+                <size>
+                 <width>50</width>
+                 <height>0</height>
+                </size>
+               </property>
+               <property name="frameShape">
+                <enum>QFrame::Box</enum>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <spacer name="_sequItemLineHorizontalSpacer">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>40</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+          </layout>
+         </widget>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>ClickableLabel</class>
+   <extends>QLabel</extends>
+   <header>clickablelabel.hpp</header>
+  </customwidget>
+  <customwidget>
+   <class>view::ts::TestCaseView</class>
+   <extends>QGraphicsView</extends>
+   <header location="global">mobatawidgets/ts/testcaseview.hpp</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>_sutCompBoxWSpinBox</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>_testCompBoxWSpinBox</receiver>
+   <slot>setValue(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>503</x>
+     <y>170</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>503</x>
+     <y>451</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>_sutCompBoxHSpinBox</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>_testCompBoxHSpinBox</receiver>
+   <slot>setValue(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>564</x>
+     <y>170</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>564</x>
+     <y>451</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>_sutCompBorderWidthSpinBox</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>_testCompBorderWidthSpinBox</receiver>
+   <slot>setValue(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>664</x>
+     <y>170</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>664</x>
+     <y>451</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>_testCompBorderWidthSpinBox</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>_sutCompBorderWidthSpinBox</receiver>
+   <slot>setValue(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>664</x>
+     <y>451</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>664</x>
+     <y>170</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>_testCompBoxHSpinBox</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>_sutCompBoxHSpinBox</receiver>
+   <slot>setValue(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>564</x>
+     <y>451</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>564</x>
+     <y>170</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>_testCompBoxWSpinBox</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>_sutCompBoxWSpinBox</receiver>
+   <slot>setValue(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>503</x>
+     <y>451</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>503</x>
+     <y>170</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

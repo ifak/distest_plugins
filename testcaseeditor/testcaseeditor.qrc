@@ -1,0 +1,5 @@
+<RCC>
+    <qresource prefix="/testcaseeditor">
+        <file>testcaseeditor.mimetypes.xml</file>
+    </qresource>
+</RCC>

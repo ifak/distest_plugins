@@ -1,0 +1,70 @@
+namespace distestproject{
+namespace distestruntime{
+
+/*! \page distestruntimeimpl_page DisTest-Runtime
+\section distestruntimeoverview_sec Überblick
+Das Modul DisTestRuntime stellt die Basisfunktionalität des Ablaufes von (verteilten) Testfällen für das Testen verteilter Systeme dar. Alle Testkomponenten und Testfälle werden dabei durch ein Objekt der Klasse DisTestRuntime verwaltet.
+
+\subsection sub_sec1 Allgemeiner Ablauf eines Testfalls
+@startuml{distributedTestCase.png}
+actor mtc
+participant ptc_1
+participant ptc_2
+control sut_1
+control sut_2
+participant ptc_3
+
+mtc -> mtc: build test model
+mtc -> mtc: prepare test runtime
+mtc -> mtc: start test case
+
+group execute test case
+
+mtc -> ptc_1: setup(setupParams)
+ptc_1 -> ptc_1: prepare()
+mtc -> ptc_2: setup(setupParams)
+ptc_2 -> ptc_2: prepare()
+mtc -> ptc_3 : setup(setupParams)
+ptc_3 -> ptc_3 : prepare()
+
+par
+mtc -> ptc_1: start()
+ptc_1 -> sut_1: stimulate()
+rnote over sut_1: ...
+sut_1 -> ptc_1: response()
+ptc_1 -> mtc: message(info)
+rnote over ptc_1: ...
+ptc_1 -> mtc: finished(result, errorMessage)
+end
+
+par
+mtc -> ptc_2: start()
+ptc_2 -> sut_2: stimulate()
+rnote over sut_2: ...
+sut_2 -> ptc_2: response()
+ptc_2 -> mtc: message(info)
+rnote over ptc_2: ...
+ptc_2 -> mtc: finished(result, errorMessage)
+end
+
+par 
+mtc -> ptc_3: start()
+ptc_3 -> sut_2: stimulate()
+rnote over sut_2: ...
+sut_2 -> ptc_3: response()
+ptc_3 -> mtc: message(info)
+rnote over ptc_3: ...
+ptc_3 -> mtc: finished(result, errorMessage)
+end
+
+mtc -> mtc: calculating test result
+mtc -> ptc_1: reset()
+mtc -> ptc_2: reset()
+mtc -> ptc_3: reset()
+end
+
+@enduml
+
+*/
+}// end namespace distestruntime
+}// end namespace distestproject

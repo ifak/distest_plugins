@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<mime-info xmlns='http://www.freedesktop.org/standards/shared-mime-info'>
+    <mime-type type="application/testsystem">
+        <sub-class-of type="text/plain"/>
+        <comment>test system specification</comment>
+        <glob pattern="*.testsystem"/>
+    </mime-type>
+    <mime-type type="application/testsystemgraphic">
+        <sub-class-of type="text/plain"/>
+        <comment>test system graphical specification</comment>
+        <glob pattern="*.testsystemgraphic"/>
+    </mime-type>
+</mime-info>

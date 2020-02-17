@@ -1,0 +1,11 @@
+<plugin name=\"distesteditor\" version=\"$$DISTESTEDITOR_VERSION\" compatVersion=\"$$DISTESTEDITOR_VERSION\">
+  <vendor>ifak</vendor>
+  <copyright>(C) Jan Krause</copyright>
+  <license>LGPL</license>
+  <description>distest test editor plugin</description>
+  <url></url>
+  <dependencyList>
+    <dependency name=\"dsleditor\" version=\"$$DSLEDITOR_VERSION\"/>
+  </dependencyList>
+</plugin>
+

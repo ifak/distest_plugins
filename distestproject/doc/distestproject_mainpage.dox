@@ -1,0 +1,25 @@
+namespace distestproject{
+
+/*! \mainpage DisTest-Projekt -> Basis für spezielle Testsysteme
+
+\tableofcontents
+
+\section distestsystems_sec Verteilte Testsysteme
+\subsection distestoverview_sec Grundsätzlicher Aufbau eines verteilten Testsystems
+Ein verteiltes Testsystem besteht aus einem zentralen Testmanager (Main Testing Component - mtc) und mehreren verteilten Testkomponenten (Parallel Testing Component - ptc). Der Testmanager ist dabei für das Verwalten der Testkomponenten und der Testfälle zuständig. Während eines Testfalls arbeitet eine Testkomponente (weitgehend) autark. Dafür muss sie aber vorher konfiguriert werden, was durch den Testmanager realisiert wird. Typische Aufgaben einer (parallelen) Testkomponente sind das 
+- Stimulieren des Testobjekts mit Testdaten/-signalen
+- Beobachten des Testobjekts
+- Empfangen und Auswerten der Antworten des Testobjekts
+- Beobachten und Auswerten der Kommunikation zwischen den Komponenten des (verteilten) Testobjekts.
+
+\image html distestproject_overview_3-2.png
+
+In der obigen Abbildung besteht das verteilte Testobjekt aus den beiden Komponenten SUT_1 und SUT_2. Das verteilte Testsystem hat die Testkomponenten TC_1, TC_2 und TC_3 zur Verfügung. Mit TC_1 und TC_3 werden die Komponenten des Testobjekts stimuliert und die Antworten empfangen und ausgewertet. Die Testkomponente TC_2 dient in diesem Beispiel zum Auswerten/Manipulieren des Kommunikationsverkehrs zwischen den SUT-Komponenten SUT_1 und SUT_2.
+
+Ein \subpage distestprojectimpl_page "DisTest-Projekt" dient zur Verwaltung aller Dateien für die Deklaration von Testfällen, Testsystemen, Testobjekten etc. Zur Ausführung eines Testprojekts wird als Basis für spezielle Testsysteme die \subpage distestruntimeimpl_page "DisTest-Runtime" verwendet.
+
+- \subpage distestprojectimpl_page "DisTest-Projekt"
+- \subpage distestruntimeimpl_page "DisTest-Runtime"
+
+*/
+}// end namespace distestproject
