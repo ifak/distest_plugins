@@ -14,37 +14,3 @@
  * You should have received a copy of the GNU Lesser General Public License
  * along with distest_plugins.  If not, see <http://www.gnu.org/licenses/>.
 */
-#pragma once
-
-#include <dsleditor/dsloutlinemodel.hpp>
-
-namespace model{ namespace ts{
-class SutItem;
-class TestSystemItem;
-}}
-
-namespace testsystemeditor {
-
-class TestSystemOutlineModel
-    : public dsleditor::DslOutlineModel
-{
-  friend class ComBuildTestSystemOutlineModel;
-
-public:
-  TestSystemOutlineModel(QObject* parent = 0);
-  virtual ~TestSystemOutlineModel();
-
-public:
-  model::ts::SutItem*         sutModel();
-  model::ts::TestSystemItem*  testSystemModel();
-
-public:
-  virtual void reset();
-
-private:
-  Q_DISABLE_COPY(TestSystemOutlineModel)
-  class Private;
-  Private* _d;
-};
-
-} // namespace testsystemeditor
